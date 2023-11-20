@@ -1,0 +1,57 @@
+/**/
+
+#body {
+  background-color: black;
+}
+
+#header {
+  background-color: blue;
+  overflow: auto;
+}
+
+.img-aquaponey {
+  height: 10%;
+  width: 10%;
+  float: left;
+}
+.title {
+  color: white;
+}
+.description {
+  float: left;
+}
+
+#main {
+}
+
+#sidebar {
+  width: 35vh;
+  height: auto;
+  background-color: green;
+  float: left;
+}
+
+#section {
+  background-color: brown;
+  height: auto;
+}
+.section-table {
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: rgb(182, 80, 80);
+}
+table tr:hover {
+  background-color: blue;
+}
+#footer {
+  background-color: yellow;
+  width: 100%;
+  height: auto;
+  float: left;
+}

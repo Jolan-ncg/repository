@@ -1,0 +1,70 @@
+header {
+    background-color: rgb(114, 189, 255);
+    min-width: 100px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+nav {
+    width: 20%;
+    width: min-content 10%;
+    background-color: rgb(30, 141, 36);
+}
+section {
+    width: 80%;
+    background-color: rgb(41, 189, 48);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box {
+    background-color: aliceblue;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+footer {
+    background-color: aliceblue;
+    height: 30px;
+}
+
+/*BEFOR CHANGING + INFO
+
+.box-test {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */ /*atribue une direction principale (horizontal et verticale)*/
+/*justify-content: start; /* axe principale séléctionné juste au dessus (ici, ligne) */
+/*align-items: center; /*axe secondaire (ici, colonne)*/
+/*align-content: first baseline;
+    border: 1px solid grey;
+    height: 90vh;
+}
+footer {
+    background-color: rgb(114, 189, 255);
+    height: 20%;
+}
+
+ALL BOX
+.box {
+    background-color: rgb(206, 206, 255);
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.box-1 {
+    flex-grow: 1;
+}
+
+.box-2 {
+    flex-shrink: 3;
+}
+
+.box-5 {
+    flex-grow: 1;
+}
+*/
