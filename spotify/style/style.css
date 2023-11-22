@@ -64,6 +64,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 768px) {
+    .left-menu {
+        display: none;
+    }
+    .left-menu-active {
+        display: block;
+    }
+}
 .logo-spotify {
     width: 78px;
     height: 24px;
@@ -73,7 +82,7 @@ body {
     background-color: #121212;
     margin: 7px 0;
     border-radius: 9px;
-    width: 90%;
+    width: 100%;
     height: 80vh;
 }
 .left-nav {
@@ -85,6 +94,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    .left-nav-active {
+        display: block;
+        width: 100vh;
+    }
 }
 .left-nav ul {
     color: #b3b3b3;
@@ -171,9 +186,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 96%;
     margin: 20px 5%;
     color: white;
+}
+.catalog-nav-chevron {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+.btn {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    .catalog-login,
+    .catalog-register {
+        width: 40px;
+        margin: 0 10px;
+    }
 }
 .catalog-login {
     background-color: white;
@@ -184,6 +215,7 @@ body {
     width: 150px;
     height: 40px;
     font-weight: 600;
+    margin-right: 25px;
 }
 .catalog-register {
     background-color: transparent;
@@ -197,4 +229,69 @@ body {
 .catalog-login:hover {
     width: 155px;
     height: 44px;
+}
+.title-main {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0 30px;
+    background-color: #2c2c2c;
+}
+.title-main a {
+    color: #a1a1a1;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .title-main {
+        font-size: 0.7em;
+    }
+    .title-main a {
+        font-size: 0.8em;
+    }
+}
+
+.catalog-card-container {
+    background-color: #2c2c2c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 3%;
+    padding: 5px;
+    overflow-y: scroll;
+}
+.catalog-card-img {
+    width: 175px;
+    height: 175px;
+    border-radius: 20px;
+    margin: 7%;
+    object-fit: cover;
+}
+.catalog-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 11px 0;
+    border-radius: 20px;
+    background-color: #1f1e1e;
+}
+@media screen and (max-width: 768px) {
+    .catalog-card {
+        width: 193px;
+    }
+    .catalog-card-img {
+        width: 165px;
+        height: 165px;
+    }
+}
+.catalog-card h4 {
+    color: white;
+    margin: 0 10px;
+}
+.catalog-card p {
+    color: rgb(185, 185, 185);
+    margin: 0 10px 10px 10px;
 }
