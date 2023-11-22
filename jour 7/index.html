@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>contact</title>
+        <link rel="stylesheet" href="contact.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="normalize.css" />
+
+        <script>
+            console.log('bonjour')
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <form
+                id="contact"
+                action="https://bio-nature.org/greta/formulaire.php"
+            >
+                <h2>Remplissez les champs</h2>
+                <p class="special">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate, aut!
+                </p>
+                <label for="fname">nom</label><br />
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Votre nom ici"
+                />
+                <label for="lname">nom</label><br />
+                <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="votre prénom ici"
+                />
+                <div class="slidecontainer">
+                    <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="50"
+                        class="slider"
+                        id="myRange"
+                    />
+                    <p>value<span id="demo"></span></p>
+                    <script src="testscript.js"></script>
+                </div>
+                <div class="special">
+                    <p class="averto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate, aut!
+                    </p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
